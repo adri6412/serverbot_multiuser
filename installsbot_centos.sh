@@ -2,15 +2,15 @@
 
 sudo yum update
 sudo yum -y install traceroute
-sudo yum -y install python3-pip
+sudo yum -y install python39-pip
 sudo yum -y install wget
-sudo yum -y install python3-devel
-pip3 install --upgrade psutil --user
-pip3 install --upgrade pyTelegramBotAPI --user
-pip3 install --upgrade python-dotenv --user
-pip3 install --upgrade matplotlib --user
-pip3 install --upgrade numpy --user
-pip3 install --upgrade pandas --user
+sudo yum -y install python39-devel
+pip3.9 install --upgrade psutil --user
+pip3.9 install --upgrade pyTelegramBotAPI --user
+pip3.9 install --upgrade python-dotenv --user
+pip3.9 install --upgrade matplotlib --user
+pip3.9 install --upgrade numpy --user
+pip3.9 install --upgrade pandas --user
 
 echo "Prepare configs"
 sed -i "s/<user>/"$USER"/g" serverbot.service.centos config.py
